@@ -20,7 +20,7 @@ const BasicJavascript = () => {
     },
   }; // Object
 
-  const sapaOrang = (nama, age) => {
+  const sapaOrang = (name, age) => {
     return console.log(`Helo ${name} usia anda ${age}`); // Hello Ulung usia anda 24
   };
 
