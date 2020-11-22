@@ -3,7 +3,33 @@ import {Image, Text, View} from 'react-native';
 
 /* Materi Flex Box */
 class FlexBox extends Component {
+  constructor(props) {
+    super(props);
+    console.log('==> constructor');
+    this.state = {
+      subscriber: 100,
+    };
+  }
+
+  componentDidMount() {
+    console.log('==> ComponentDidMount');
+    setTimeout(() => {
+      this.setState({
+        subscriber: 400,
+      });
+    }, 2000);
+  }
+
+  componentDidUpdate() {
+    console.log('==> Component Did Update');
+  }
+
+  componentWillUnmount() {
+    console.log('==> Component Will Unmount');
+  }
+
   render() {
+    console.log('==> Render');
     return (
       <View>
         <View
@@ -44,7 +70,7 @@ class FlexBox extends Component {
             <Text style={{fontSize: 20, fontWeight: 'bold'}}>
               Ulung Priyo Bintoro
             </Text>
-            <Text>186 Subscriber</Text>
+            <Text>{this.state.subscriber} Subscriber</Text>
           </View>
         </View>
       </View>
