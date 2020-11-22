@@ -1,9 +1,9 @@
 import React from 'react';
 import {Image, StyleSheet, Text, View} from 'react-native';
-import shoppingcart from './gambar/shoppingcart.png';
+import shoppingcart from '../../assets/icons/shoppingcart.png';
 
 /* Materi PositionReactNative */
-export default function PositionReactNative() {
+export default function Position() {
   return (
     <View style={styles.distanceWrapper}>
       <Text>Materi Position</Text>
